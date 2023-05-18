@@ -75,7 +75,7 @@ class _SignUpViewState extends State<SignUpView> {
                                 color: Pallete.blueColor, fontSize: 16),
                             recognizer: TapGestureRecognizer()
                               ..onTap = () {
-                                Navigator.push(
+                                Navigator.pop(
                                   context,
                                   LoginView.route(),
                                 );
