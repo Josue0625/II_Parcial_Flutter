@@ -66,7 +66,8 @@ class _LoginViewState extends State<LoginView> {
                 RichText(
                   text: TextSpan(
                       text: "Don't have an account?",
-                      style: const TextStyle(fontSize: 16),
+                      style: const TextStyle(
+                          fontSize: 16, color: Pallete.greyColor),
                       children: [
                         TextSpan(
                             text: ' Sign up',
@@ -75,6 +76,7 @@ class _LoginViewState extends State<LoginView> {
                             recognizer: TapGestureRecognizer()
                               ..onTap = () {
                                 Navigator.push(
+                                  // Tener en cuenta como olvidar el historial en flutter con navigator
                                   context,
                                   SignUpView.route(),
                                 );
