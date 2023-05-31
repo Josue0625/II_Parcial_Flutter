@@ -3,25 +3,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:twitter_clone/constants/constants.dart';
-//import 'package:twitter_clone/features/home/widgets/side_drawer.dart';
-//import 'package:twitter_clone/features/tweet/views/create_tweet_view.dart';
+import 'package:twitter_clone/features/home/widgets/side_drawer.dart';
+import 'package:twitter_clone/features/tweet/views/create_tweet_view.dart';
 import 'package:twitter_clone/theme/pallete.dart';
 
-class HomeView extends ConsumerWidget {
+class HomeView extends StatefulWidget {
   static route() => MaterialPageRoute(
         builder: (context) => const HomeView(),
       );
   const HomeView({super.key});
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    return Scaffold();
-  }
-  /* @override
-  State<HomeView> createState() => _HomeViewState(); */
+  
+   @override
+  State<HomeView> createState() => _HomeViewState(); 
 }
 
 
-/* class _HomeViewState extends State<HomeView> {
+ class _HomeViewState extends State<HomeView> {
   int _page = 0;
   final appBar = UIConstants.appBar();
 
@@ -31,11 +28,11 @@ class HomeView extends ConsumerWidget {
     });
   }
 
-  /* onCreateTweet() {
+  onCreateTweet() {
     Navigator.push(context, CreateTweetScreen.route());
-  } */
+  }  
 
-  /* @override
+   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _page == 0 ? appBar : null,
@@ -82,5 +79,5 @@ class HomeView extends ConsumerWidget {
         ],
       ),
     );
-  } */
-} */
+  } 
+} 

@@ -4,8 +4,8 @@ class AppwriteConstants {
   static const String endPoint = 'http://192.168.101.7:80/v1';
 
   static const String usersCollection = '6475063adb782f7edd52';
-  static const String tweetsCollection = '63cbd6781a8ce89dcb95';
-  static const String notificationsCollection = '63cd5ff88b08e40a11bc';
+  static const String tweetsCollection = '64766bd8abc46fdc3d0f';
+  static const String notificationsCollection = '6476804907fa6bb43e2d';
 
   static const String imagesBucket = '63cbdab48cdbccb6b34e';
 
