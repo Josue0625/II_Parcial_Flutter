@@ -13,6 +13,7 @@ class NotificationView extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final currentUser = ref.watch(currentUserDetailsProvider).value;
+    print(currentUser);
 
     return Scaffold(
       appBar: AppBar(
